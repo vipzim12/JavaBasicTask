@@ -6,30 +6,32 @@ public class DaySo {
 	Scanner sc = new Scanner(System.in);
 	int arr[];
 
-	public DaySo(int n) {
-		arr = new int[n];
-		Nhap(n);
+	public DaySo() {
+		Nhap();
+		System.out.println("The elements of array: ");
 		printf();
 	}
 
-	public void Nhap(int n) {
-		System.out.println("Moi nhap Day so:  ");
+	public void Nhap() {
+		System.out.println("Enter the number of elements of array: ");
+		int n = sc.nextInt();
+		arr = new int[n];
+		System.out.println("Enter the array...  ");
 		int temp = 0;
 		int value;
 		while (temp < n) {
-			System.out.println("Nhap phan tu thu " + (temp + 1) + ": ");
+			System.out.println("Enter the elements " + (temp + 1) + ": ");
 			value = sc.nextInt();
-			System.out.println("Value: "+ value);
 			arr[temp] = value;
 			temp++;
 		}
 	}
 
 	public void printf() {
-		System.out.print("Danh sach cac phan tu trong mang: ");
 		for (int i = 0; i < arr.length; i++) {
 			System.out.print("  " + arr[i]);
 		}
+		System.out.println();
 	}
 
 	public int[] getArr() {

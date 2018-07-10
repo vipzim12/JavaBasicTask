@@ -2,8 +2,8 @@ package Exercises2_Interface;
 
 public class QuickSort extends DaySo implements Sort {
 
-	public QuickSort(int n) {
-		super(n);
+	public QuickSort() {
+		super();
 	}
 
 	public int partition(int arr[], int left, int right) {
@@ -40,8 +40,8 @@ public class QuickSort extends DaySo implements Sort {
 
 	@Override
 	public void Sort() {
-		quickSort(getArr(), 0, getArr().length);
-		printf();
+		quickSort(getArr(), 0, getArr().length - 1);
+	
 	}
 
 }
