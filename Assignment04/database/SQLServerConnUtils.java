@@ -18,7 +18,7 @@ public class SQLServerConnUtils {
 	public static Connection getSQLServerConnection(String hostName, String sqlInstanceName, String database,
 			String username, String password) throws ClassNotFoundException, SQLException {
 		Class.forName("com.microsoft.sqlserver.jdbc.SQLServerDriver");
-		String connectionURL = "jdbc:sqlserver://" + hostName + ":28202" + ";instance=" + sqlInstanceName
+		String connectionURL = "jdbc:sqlserver://" + hostName + ":60722" + ";instance=" + sqlInstanceName
 				+ ";databaseName=" + database;
 		Connection conn = DriverManager.getConnection(connectionURL, username, password);
 		return conn;
