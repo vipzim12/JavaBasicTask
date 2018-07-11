@@ -6,3 +6,4 @@ public interface Shape {
 	public String showTypeOfShape();
 
 }
+ 

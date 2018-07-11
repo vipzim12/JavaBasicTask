@@ -60,6 +60,9 @@ public class Main {
 			case 5:
 				System.out.println("-----------EXITED PROGRAM----------");
 				System.exit(1);
+			default:
+				System.out.println("You must enter number from 1 to 5...");
+				break;
 			}
 		}
 	}

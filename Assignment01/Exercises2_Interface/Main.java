@@ -13,6 +13,7 @@ public class Main {
 			System.out.println("1. QuickSort");
 			System.out.println("2. SelectionSort");
 			System.out.println("3. InsertSort");
+			System.out.println("4. Exit");
 			select = sc.nextInt();
 			switch (select) {
 			case 1:
@@ -35,7 +36,11 @@ public class Main {
 				insertSort.Sort();
 				System.out.println("Array Sorted: ");
 				insertSort.printf();
-			default:
+			case 4:
+				System.out.println("Exited Program...");
+				return ;
+			default :
+				System.out.println("You must enter a number from 1 to 4...");
 				break;
 			}
 		}
